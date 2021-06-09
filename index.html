@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <title>Project 78</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <p id="nameheading">Family Book</p>
+  <img id="display_Image" src="family book img.jpg">
+  <h4 id="display_Names"></h4>
+  <p>
+    <button type="button" onclick="changeImages()">Next</button>
+  </p>
+  <script>
+
+    var Image =
+      [
+        "https://clipartstation.com/wp-content/uploads/2017/11/clipart-personnage-7.jpg",
+        "https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX36147634.jpg",
+        "https://www.pinclipart.com/picdir/middle/197-1977700_boy-children-cartoon-clipart.png",
+        "https://previews.123rf.com/images/iimages/iimages1206/iimages120600467/13988389-illustration-of-a-cute-little-girl.jpg"
+      ];
+
+    var names = ["Father: Saravana Kumar", "Mother: Narmadha", "Brother: Sajeevan", "Me: Samiksha"];
+
+    var i = 0;
+    function changeImages() {
+      console.log(i);
+     
+      var family_member_array = 4;
+
+      if (i >= family_member_array)
+        {
+          i = 0;
+        }
+        
+        var family_image = Image[i];
+        var family_name = names[i];
+        console.log(family_name);
+        document.getElementById("display_Image").src = family_image;
+        document.getElementById("display_Names").innerHTML = family_name;
+        i++;
+    }
+
+  </script>
+
+</body>
+
+</html>
