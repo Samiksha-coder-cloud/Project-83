@@ -1,15 +1,24 @@
-#display_Image
+
+h1
 {
-  width:200px;
-  height:300px;
+	color: red; 
+	font-size: 40px;
 }
-body
-{
-  text-align:center;
+.body_backgorund {
+	background-image: url("bg1.jpg");
+	background-position: center;
+	background-size: cover;
 }
-#nameheading
-{
-  font-size:40px;
-  color:#283593;
-  font-variant: small-caps;
+
+#myCanvas{
+	background-color: white;
+	border-width: 10px;
+	border-style: ridge;
+}
+
+#clear_button {
+	background-color:cyan;
+	color: crimson;
+	font-size: 20px;
+	font-weight: bold;
 }
